@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Cards</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient( to right, rgb(158, 80, 158), rgb(96, 51, 104)  ); 
+    }
+    .navbar {
+      background-color: #333;
+      padding: 15px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 5px;
+    }
+    .navbar a:hover {
+      background-color: #555;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Ajuste para 4 colunas */
+      grid-gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    #img{
+        width: 250px;
+        height: 250px;
+    }
+    #img1{
+        width: 400px;
+    }
+    #img2{
+        width: 400px;
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</div>
+
+<h1 class="page-title">Playlists</h1>
+<h4>As mais tocadas da semana </h4>
+<div class="grid-container">
+  <div class="card">
+    <img id="img1" src="maxresdefault.jpg" alt="Placeholder Image">
+    <h2>Playlist 1</h2>
+    <p>Edy lemond</p>
+  </div>
+  <div class="card">
+    <img id="img" src="ryu.jpg" alt="Placeholder Image">
+    <h2>playlist 2</h2>
+    <p>Ryu the runner</p>
+  </div>
+  <div class="card">
+    <img id="img2" src="gloria.jpeg" alt="Placeholder Image">
+    <h2>playlist 3</h2>
+    <p>Bts</p>
+  </div>
+  <div class="card">
+    <img id="img" src="bey.jpg" alt="Placeholder Image">
+    <h2>playlist 4</h2>
+    <p>Beyonce</p>
+  </div>
+</div>
+
+</body>
+</html>
